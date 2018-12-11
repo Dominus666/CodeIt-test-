@@ -53,6 +53,7 @@ function checkForm() {
     }
     if(arr[arr.length-1].field.checked !== true) {
         error(arr[arr.length-1].error)
+        errorRegistration.style.display = 'block'
     }
 
     success = errorRegistration.children.length === 0
