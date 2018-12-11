@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>codeIT</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/registration.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div id="error"></div>
+        <form id="formRegistration">
+            <div class="formTitle">Sign Up</div> 
+            <div class="inputWrapper">
+                <div class="userWrapper">
+                    <i class="fa fa-user" aria-hidden="true"></i>
+                    <input name="name" id="userName" type="text" placeholder="UserName" required>
+                </div>
+                <div class="userWrapper">
+                    <i class="fa fa-user" aria-hidden="true"></i>
+                    <input name="secondname" id="userSecondName" type="text" placeholder="SecondName" required>
+                </div>
+                <div class="userWrapper">
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                    <input name="email" id="userEmail" type="text" placeholder="Email" required>
+                </div>
+                <div class="userWrapper">
+                    <i class="fa fa-venus-mars" aria-hidden="true"></i>
+                    <select name="gender" id="userGender" required>
+                        <option disabled selected>--gender--</option>  
+                        <option value="male" >Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                </div>
+                <div class="userWrapper">
+                    <i class="fa fa-lock" aria-hidden="true"></i>
+                    <input id="userPassword" type="password" placeholder="Password" required>
+                </div>
+                
+                <label><input id="userCheck" type="checkbox" required><span>Conditions of Agreement</span></label>
+                <div class="sendButtonWrapper">
+                    <input type='button' id="sendButton" value="send">
+                </div>
+            </div>
+        </form> 
+    </div>
+    <script src="./js/registration.js"></script>
+</body>
+</html>
